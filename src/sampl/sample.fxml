@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D8BFD8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sampl.Controller">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="630.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="ВOpen" mnemonicParsing="false" onAction="#onAimport" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: purple;" text="Извлечь " textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Line endX="1.0" startX="-100.0" />
+                  <Button fx:id="BSoxt" mnemonicParsing="false" onAction="#onsoxp" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: purple;" text="Сохранить" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Line endX="1.0" startX="-100.0" />
+                  <Button fx:id="Bdob" mnemonicParsing="false" onAction="#onAdd" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: purple;" text="Добавить" textFill="#fffdfd">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Line endX="1.0" startX="-100.0" />
+                  <Button fx:id="Bdel" mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: purple;" text="Удалить" textFill="#f8f8f8">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Canvas fx:id="can" height="200.0" width="356.0" />
+<!--            <ColorPicker style="-fx-background-color: grey;" />-->
+<!--            <VBox prefHeight="200.0" prefWidth="100.0">-->
+<!--               <children>-->
+<!--                  <Label prefHeight="100.0" prefWidth="165.0" text="Label" />-->
+<!--               </children>-->
+<!--            </VBox>-->
+            <ImageView fx:id="imageid" fitHeight="108.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/СompetenceMatrix.png" />
+               </image></ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="tableview" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D8BFD8;" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tablColDepartment" prefWidth="75.0" text="Кафедра" />
+          <TableColumn fx:id="tablColIndex" prefWidth="75.0" text="Индекс" />
+            <TableColumn fx:id="tablColNameDiscipline" prefWidth="75.0" text="Наименование дисциплины" />
+            <TableColumn fx:id="tablColUK1" prefWidth="75.0" text=" УК-1" />
+            <TableColumn fx:id="tablColUK2" prefWidth="75.0" text=" УК-2" />
+            <TableColumn fx:id="tablColUK3" prefWidth="75.0" text=" УК-3" />
+            <TableColumn fx:id="tablColUK4" prefWidth="75.0" text=" УК-4" />
+            <TableColumn fx:id="tablColOPK1" prefWidth="70.0" text="  ОПК-1" />
+            <TableColumn fx:id="tablColOPK2" text="  ОПК-2" />
+            <TableColumn fx:id="tablColOPK3" prefWidth="75.0" text="  ОПК-3" />
+            <TableColumn fx:id="tablColOPK4" prefWidth="75.0" text="  ОПК-4" />
+            <TableColumn fx:id="tablColOPK5" prefWidth="75.0" text="  ОПК-5" />
+
+
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox fx:id="hvoxAdd" prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textD" onAction="#onAdd" />
+            <TextField fx:id="textI" onAction="#onAdd" />
+            <TextField fx:id="textN" onAction="#onAdd" />
+<!--            <ChoiceBox fx:id="cmbYESNo" prefWidth="150.0" />-->
+
+            <TextField fx:id="textUK1" onAction="#onAdd" />
+            <TextField fx:id="textUK2" onAction="#onAdd" />
+            <TextField fx:id="textUK3" onAction="#onAdd" />
+            <TextField fx:id="textUK4" onAction="#onAdd" />
+            <TextField fx:id="textOPK1" onAction="#onAdd" />
+            <TextField fx:id="textOPK2" onAction="#onAdd" />
+            <TextField fx:id="textOPK3" onAction="#onAdd" />
+            <TextField fx:id="textOPK4" onAction="#onAdd" />
+            <TextField fx:id="textOPK5" onAction="#onAdd" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
