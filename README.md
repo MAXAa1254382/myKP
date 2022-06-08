@@ -24,7 +24,7 @@
 Распаковать архив
 
 ## Конфигурация
-
+JavaFX API of version 11.0.1
 Windows, Linux or MacOS
 Archiver (winrar, 7-Zip, etc)
 Installed JDK 8
